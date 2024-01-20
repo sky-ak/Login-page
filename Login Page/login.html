@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative
+    }
+    .content{
+        background-color: transparent;
+        padding: 30px 40px;
+        border-radius: 5px;
+        border: 2px solid rgba(18, 183, 220, 0.6);
+        position: absolute;
+    }
+    .content h3{
+        padding-bottom: 15px;
+        font-size: 35px;
+        text-align: center;
+        color: rgba(220, 170, 75, 0.975);
+    }
+    .content .inputclass{
+        padding: 8px;
+        height: 30px;
+        width: 230px;
+       
+    }
+    .inputclass input{
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        height: 100%;
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+    }
+    .remember{
+      margin: 15px;
+    }
+   .register{
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+   }
+   .video{
+    height: 100vh;
+    width: 100%;
+   }
+   .submit{
+    background-color: transparent;
+    border: none;
+    outline:none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20, 213, 230);
+    border-radius: 5px;
+   
+   }
+
+   .submit-button{
+    height: 30px;
+    width: 280px;
+    margin-top: 20px;
+   }
+   @media (min-aspect-ratio:16/9) {
+
+    .video{
+        width: 100%;
+        height: auto;
+    }
+    
+   }
+   @media (max-aspect-ratio:16/9) {
+
+.video{
+    width: auto;
+    height: 100%;
+}
+
+}
+</style>
+
+<body>
+   
+    <div class="container">
+        <video class="video" autoplay loop muted plays-inline src="goku.mp4"></video>
+        <div class="content">
+            <h3>Login</h3>
+            <form action="">
+
+                <div class="inputclass">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="inputclass">
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="submit-button">
+                    <button class="submit" type="submit">LOGIN</button>
+                </div>
+                
+                <div class="remember">
+                    <input type="checkbox">&nbsp; Remember me <a href="#">Forget Password?</a>
+                </div>
+            </form>
+           
+           
+            <div class="register">
+                <p>Didn't have a account <a href="#">Register Now</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
